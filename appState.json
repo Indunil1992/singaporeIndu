@@ -1,0 +1,101 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "b2bd1f2b-42b0-4703-917b-714ba5407460": {
+        "id": "b2bd1f2b-42b0-4703-917b-714ba5407460",
+        "parent": null,
+        "name": "singaporeIndu",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "7040f67b-b8bf-4b13-8853-0527b119a5a5"
+        ],
+        "isRemovable": false,
+        "filePath": "singaporeIndu"
+      },
+      "7040f67b-b8bf-4b13-8853-0527b119a5a5": {
+        "id": "7040f67b-b8bf-4b13-8853-0527b119a5a5",
+        "parent": "b2bd1f2b-42b0-4703-917b-714ba5407460",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "singaporeIndu/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully singapore executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapSoutheast1jiqainduany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "b2bd1f2b-42b0-4703-917b-714ba5407460",
+    "openFiles": [
+      "7040f67b-b8bf-4b13-8853-0527b119a5a5"
+    ],
+    "currentFileId": "7040f67b-b8bf-4b13-8853-0527b119a5a5",
+    "resources": {
+      "apigapSoutheast1jiqainduany": {
+        "name": "apigapSoutheast1jiqainduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-1",
+          "apiMode": 0,
+          "apiName": "ji",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indu",
+          "resourcePath": "/qa/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "singaporeIndu",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1568110221131
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "singaporeIndu",
+      "url": "https://github.com/Indunil1992/singaporeIndu"
+    }
+  }
+}
